@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')=="True"
 ALLOWED_HOSTS = [
-    "https://task-manager-backend-uf1b.onrender.com"
+    "task-manager-backend-uf1b.onrender.com"
 ]
 
 
