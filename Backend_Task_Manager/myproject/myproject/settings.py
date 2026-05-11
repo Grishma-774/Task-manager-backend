@@ -30,7 +30,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')=="True"
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "https://task-manager-backend-uf1b.onrender.com"
+]
 
 
 # Application definition
@@ -150,7 +152,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CORS_ALLOW_ALL_ORIGINS=True
+CORS_ALLOWED_ORIGINS = [
+    "https://task-manager-frontend-ashen-alpha.vercel.app"
+]
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
